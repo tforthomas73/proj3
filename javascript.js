@@ -25,15 +25,15 @@ marker.addListener('click', function() {
 });
 
  var infowindow = new google.maps.InfoWindow({
-  content: contentString
+  content: "Irish"
 });
 
   var infowindow1 = new google.maps.InfoWindow({
-  content: contentString1
+  content: "Whiskey"
 });
 
 var infowindow2 = new google.maps.InfoWindow({
-  content: contentString2
+  content: "Clare"
 });
 
 var marker1 = new google.maps.Marker({
@@ -53,13 +53,12 @@ var marker2 = new google.maps.Marker({
 marker2.addListener('click', function() {
   infowindow1.open(map, marker2);
 });
-
 }
-
-function toggleBounce() {
-if (marker.getAnimation() !== null) {
-  marker.setAnimation(null);
-} else {
-  marker.setAnimation(google.maps.Animation.BOUNCE);
-}
+function toggleBounce() 
+{
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
 }
