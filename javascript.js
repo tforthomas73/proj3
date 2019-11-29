@@ -63,9 +63,3 @@ if (marker.getAnimation() !== null) {
   marker.setAnimation(google.maps.Animation.BOUNCE);
 }
 }
-function loadScript() {
-  var script = document.createElement('script');
-  script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBtlwn67utrYAPCrMuZpQVn60VrgLMcl-Q&callback=initMap';
-  document.body.appendChild(script);
-}
-window.onload = loadScript;
